@@ -1,0 +1,42 @@
+.blog_box {
+	
+	width: 100%;
+	
+	font-family: roboto;
+	background-color: white;
+	color: black;
+}
+select {
+	width: 100%;
+	border-width: 1px; border-color: rgb(160,160,255); 
+	height: 30px;
+}
+input[type="file"] {
+	width: 50%;
+}
+input[type="text"], input[type="password"], input[type="tel"], textarea {
+	border-width: 1px; border-color: rgb(160,160,255); 
+	
+	width: 100%;
+	background-color: white;
+	height: 40px;
+	font-size: 18px;
+	color: black;
+
+}
+input[type="submit"] {
+	border: none;
+	background-color: green;
+	padding: 4px;
+	width: 100%;
+	font-size: 22px;
+	font-weight: bold;
+}
+sup {
+	color: red;
+}
+.blog_section p
+{
+	font-size: 18px;
+	font-weight: bold;
+}

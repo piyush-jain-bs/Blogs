@@ -1,0 +1,124 @@
+/*NAVBAR*/
+.sidenav {
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow: auto;
+    transition: 0.5s;
+    padding-top: 25%;
+    opacity:0.9;
+}
+
+.sidenav a {
+    padding: 8px 8px 20px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #f1f1f1;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color:goldenrod;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 9%;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    /*z-index:1;*/
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 13px;}
+  .sidenav a {font-size: 12px;}
+}
+
+.navb {
+    background-color: black;
+    position: sticky !important;
+    position: -webkit-sticky !important;
+    top:0;
+    z-index:1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*logo*/
+img {
+  width: 100px;
+  height: 50px;
+}
+
+.fonts
+{
+    font-family: cinzel;
+}
+
+/*content-cards*/
+.polaroid {
+    border: 1px solid #BFBFBF;
+    background-color: white;
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+/*cards texts*/
+.justify {
+    text-align: justify;
+}
+
+/*media query for web and android view of slider*/
+@media only screen and (max-width: 480px) {
+  .mobile_size {
+    height:400px;
+  }
+}
+
+@media only screen and (min-width: 481px) {
+  .web_size {
+    height:680px;
+  }
+}
+
+/*USER_LOGIN*/
+
+/*center the form*/
+.user_login_card {
+    transform:translate(-50%,2%);
+    left:50%;
+    top:50%;
+}
+
+/*form shadow*/
+.shadow {
+  -moz-box-shadow:    3px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow:         3px 3px 5px 6px #ccc;
+}
+
+/*text-color*/
+.color {
+    color:white;
+}
+
+/*=======================================ABOUTUS================================================*/
+
+.polaroid1 {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/*MAke card responsive for iphone devices*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    .user_login_card {
+        max-width:50%;
+        width:50%;
+        flex:none;
+    }
+}
+
+
