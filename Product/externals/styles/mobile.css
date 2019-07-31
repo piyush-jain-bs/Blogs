@@ -1,0 +1,281 @@
+
+/* $Id: mobile.css 8825 2011-04-09 01:34:20Z john $ */
+
+
+
+/*
+COMPOSE PRODUCT ENTRY
+Styles the compose product entry form.
+*/
+#products_create div.form-label
+{
+  float: none;
+  text-align: left;
+  margin: 0px;
+  padding: 0px 0px 5px 0px;
+}
+#products_create div.form-element
+{
+  float: none;
+}
+
+
+
+
+
+
+/*
+BROWSE PRODUCTS
+Styles the browse products page and the
+manage product entries page.
+*/
+#show-wrapper
+{
+  display: none;
+}
+ul.products_browse
+{
+  clear: both;
+}
+ul.products_browse > li
+{
+  clear: both;
+  padding: 0px 0px 15px 0px;
+  overflow:hidden;
+}
+ul.products_browse > li + li
+{
+  border-top-width: 1px;
+  padding-top: 15px;
+}
+ul.products_browse > li .products_browse_photo
+{
+  float: left;
+  overflow: hidden;
+  margin-right: 20px;
+}
+ul.products_browse > li .products_browse_photo img
+{
+  width: 100px;
+  display:block;
+}
+ul.products_browse > li .products_browse_options
+{
+  display: none;
+}
+ul.products_browse > li .products_browse_options > a
+{
+  clear: both;
+  display: block;
+  font-size: 0.9em;
+  margin: 0 5px;
+  padding-bottom: 2px;
+  padding-top: 2px;
+}
+ul.products_browse > li .products_browse_info
+{
+  overflow: hidden;
+}
+ul.products_browse > li .products_browse_info_title
+{
+  font-weight: bold;
+  font-size: 13pt;
+  letter-spacing: -1px
+}
+ul.products_browse > li .products_browse_info_title > h3
+{
+  font-size: 12pt;
+}
+ul.products_browse > li .products_browse_info_date
+{
+  font-size: .8em;
+  color: $theme_font_color_light;
+}
+ul.products_browse > li .products_browse_info .stat_info
+{
+  margin: 5px 0;
+}
+ul.products_browse > li .products_browse_info .stat_info span
+{
+  margin-right: 8px;
+}
+ul.products_browse > li .products_browse_info .views_product
+{
+  display:none;
+}
+ul.products_browse > li .products_browse_info_blurb
+{
+  margin-top: 5px;
+}
+
+
+
+/*
+VIEW PRODUCT
+Styles both the 'view product' and the 'view product entry'
+pages, including the right-side gutter column by default.
+*/
+ul.products_entrylist > li
+{
+  padding-bottom: 10px;
+  border-bottom-width: 1px;
+  margin-bottom: 10px
+}
+ul.products_entrylist h3
+{
+  margin-bottom: 1px;
+}
+ul.products_entrylist .product_entrylist_entry_date
+{
+  font-size: 9pt;
+  margin-bottom: 5px;
+  color: $theme_font_color_light;
+  text-align: center;
+}
+ul.products_entrylist .product_entrylist_entry_body
+{
+  padding: 5px 5px 5px 0px;
+  margin: 0px;
+}
+ul.products_entrylist .product_entrylist_entry_body img
+{
+  max-width: 100%;
+}
+ul.products_entrylist .product_entrylist_entry_body + .buttonlink
+{
+  margin-top: 5px;
+}
+ul.products_entrylist + .comments
+{
+  padding-top: 10px;
+}
+#global_page_product-index-view .layout_left
+{
+  display: none;
+}
+#global_page_product-index-view h2
+{
+  margin-bottom: 5px;
+  text-align: center;
+  font-size: 1.3em;
+}
+#global_page_product-index-view .comments
+{
+  width: auto;
+}
+div.product_entrylist_entry_body.rich_content_body >p{
+padding-bottom: 1em;
+}
+div.product_entrylist_entry_body.rich_content_body > ol{
+    padding: 0em 0em 1em 1em;
+}
+.rich_content_body blockquote {
+  border: 1px dashed $theme_border_medium_color;
+  background: $theme_body_background_color;
+  padding: 10px;
+  margin: 10px 10px;
+  display: block;
+}
+
+/* ACTION TYPE ICONS */
+.activity_icon_comment_product:before
+{
+  content: "\\f0e5";
+  font-family:fontawesome;
+}
+
+
+
+
+/* ITEM TYPE ICONS */
+.item_icon_product:before,
+.item_icon_product_entry:before
+{
+  content: "\\f0f6";
+  font-family:fontawesome;
+}
+
+
+
+
+/* ICONS */
+.icon_product_new
+{
+  position:relative;
+}
+
+.icon_product_new:before 
+{
+  content: "\\f0f6";
+}
+.icon_product_new:after
+{
+  content: "\\f055";
+}
+
+.icon_product_edit:before 
+{
+  content: "\\f040";
+}
+.icon_product_delete:before 
+{
+  content: "\\f056";
+}
+.icon_product_style:before 
+{
+  content: "\\f1fc";
+}
+.icon_product_viewall:before
+{
+  content: "\\f0f6";
+}
+
+/*
+FEED ITEMS
+Styles items with classified attachments in the feed.
+*/
+ul.feed .feed_attachment_product
+{
+  display: block;
+  overflow: hidden;
+  margin: 0px 5px 5px 0px;
+  vertical-align: top;
+}
+ul.feed .feed_attachment_product > div > a
+{
+  display: block;
+  float: left;
+  margin-right: 7px;
+}
+ul.feed .feed_attachment_product > div > a > img
+{
+  display: inline-block;
+  max-width: 90px;
+  max-height: 90px;
+  vertical-align: top;
+}
+ul.feed .feed_attachment_product > div > div
+{
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* hide menu items */
+.headline .tabs .navigation li > a.product_main_create
+{
+  display: none;
+}
